@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+   <div class="d-flex bd-highlight justify-content-center tabs_container">
+    <div id="tab-0" onclick="tabchange(0)" class="tabs"><i style="margin-right: 6px;" class="fa-solid fa-house"></i>Home</div>
+    <div id="tab-1" onclick="tabchange(1)" class="tabs"><i style="margin-right: 6px;" class="fa-solid fa-circle-user"></i>About</div>
+    <div id="tab-2" onclick="tabchange(2)" class="tabs"><i style="margin-right: 6px;" class="fa-solid fa-briefcase"></i>Services</div>
+    <div id="tab-3" onclick="modalchange(0)" class="tabs">Log in</div>
+    <div id="tab-4" onclick="modalchange(1)" class="tabs">Sign up</div>
+   </div>
+
+
+   <div class="tabs_content">
+    <div id="tabc-0" class="tab_c">
+    <h1 class="tab_heading">Welcome!</h1>
+    <p class="tab_text">This is my Tabs Assignment.</p>
+    </div>
+
+    <div id="tabc-1" class="tab_c">
+    <h1 class="tab_heading">Who Am I?</h1>
+    <p class="tab_text">My name is <span style="color: rgb(253, 43, 43);">Obaid Ur Rehman</span>.</p>
+</div>
+
+    <div id="tabc-2" class="tab_c">
+    <h1 class="tab_heading">What i am providing?</h1>
+    <p class="tab_text">
+        I am providing all Web Services to boost your business.
+    </p>
+</div>
+
+   </div>
+
+<!-- log in form -->
+   <form id="modal" action="index.html" class="box">
+    <button onclick="close()" class="btn1">&#10060;</button>
+    <h1>Login-Form</h1>
+    <input type="text" name="" placeholder="Username">
+    <input type="password" name="" placeholder="Password">
+    <input type="submit" name="" value="Login">
+    </form>
+
+<!-- sign up form -->
+   <form id="modal1" action="index.html" class="box">
+    <button onclick="close()" class="btn1">&#10060;</button>
+    <h1>Sign Up Form</h1>
+    <input type="text" name="" placeholder="First Name">
+    <input type="text" name="" placeholder="Last Name">
+    <input type="email" name="" placeholder="Email">
+    <input type="password" name="" placeholder="Password">
+    <input type="password" name="" placeholder="Confirm Password">
+    <input type="submit" name="" value="Register">
+
+    </form>
+
+   <script src="app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
